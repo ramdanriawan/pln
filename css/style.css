@@ -1,0 +1,4 @@
+select[class*=ui-datepicker]
+{
+	color: #444;
+}

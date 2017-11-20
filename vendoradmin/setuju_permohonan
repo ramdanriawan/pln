@@ -1,0 +1,14 @@
+<?php 
+include 'monitor_permohonan.php';
+$status=$_GET['status'];
+//ambil aksi
+$act = $_GET['confirm'];
+//jika aksi = input
+switch($act){
+	case "input"
+		$result = mysql_query("INSERT INTO tb_status(status)VALUES('','$_POST[status]')");
+}
+
+header("location:cetak_permohonan.php");
+
+?>
